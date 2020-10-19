@@ -1,0 +1,52 @@
+body, header{
+  font-family:'Courier New', Courier, monospace;
+  background: black;
+  color:aliceblue;
+  font-size: 85%;
+  text-align: center;
+}
+
+header{
+  border:0ch; /*What does this do?*/
+  margin: 20px;
+  padding:20px;
+  height: 275px;
+}
+
+a:link {
+  color: greenyellow;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(231, 33, 231);
+}
+
+/* selected link */
+a:active {
+  color: red;
+}
+
+.group{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.item{
+  margin: 5px;
+  flex: 1;
+
+}
+
+@media all and (max-width: 600px){
+header, body{ 
+  background-color: rgb(58, 34, 2);;
+}
+}
