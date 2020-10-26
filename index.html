@@ -10,12 +10,22 @@
       <!-- Use the header to encompass name and image -->
       <header>
          <h1> Shez Rahman </h1>
-         <img src="me-pic.jpg" width="350" alt="Pic of Shez" >
+         <nav>
+         <ul>
+           <li> <a href="#intro">Home</a></li>
+           <li> <a href="#about">About</a></li>
+           <li> <a href="#portfolio">Portfolio</a></li>
+           <li> <a href="#contact">Contact</a></li>
+           
+          </ul> 
+          </nav>
+         
       </header>
       <main>
+        <img src="me-pic.jpg" width="350" alt="Pic of Shez" >
          <div class="group">
             <div class="item">
-               <h2> Intro </h2>
+               <h2 id="intro"> Intro </h2>
             </div>
             <div class="item">
                <h3> Hi! I'm Shez Rahman </h3>
@@ -29,7 +39,7 @@
          <hr class="item">
          <!-- have horizontal rule breaks between sections -->
          <section class="group">
-            <h2> About Me </h2>
+            <h2 id="about"> About Me </h2>
             <div class="item">
                <p>
                   After studying computer science at SFSU for a few years, I felt eager to pick up some front end skills at Thinkful bootcamp and start my work as a web developer. I love the growth that comes with working collaboratively with others to learn new ways of thinking, and am passionate about communication - because of this, I couldn't wait to start my career as a software developer.
@@ -56,7 +66,7 @@
          </section>
          <!-- about me -->
          <div class="group">
-         <h2> Work </h2>
+         <h2 id="portfolio"> Work </h2>
          <div class="item"> <a href="https://www.github.com/shezpc" target= "_blank">My GitHub </a></div>
          TBA
          <hr class="item">
@@ -65,8 +75,9 @@
          <div class="item"> TBA </div>
          <hr class="item">
          <!-- break between about and contact -->
+         <section class="contact">
          <div class="group">
-            <h2> Contact</h2>
+            <h2 id="contact"> Contact</h2>
             <div class="item">
                <p> 
                   If you're looking to hire a new developer, you can find me at: 
@@ -79,9 +90,31 @@
                <div class="item">
                   <li> <a href="https://www.linkedin.com/in/shez-rahman" target="_blank"> My LinkedIn </a> </li>
                </div>
+              </ul>
          </div>
-         </ul>
+         </section>
          <div class="item"> You can also email me at: shezpc@gmail.com </div>
+
+         <!-- modify this form HTML and place wherever you want your form -->
+
+<form
+  action="https://formspree.io/f/xgepkgoz"
+  method="POST"
+>
+  <div class="item"><label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <br>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+</div>
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
          <!-- <iframe src="https://www.google.com/maps/@37.3221332,-121.7829565,15.23z" width="600" height="450" allowfullscreen=""></iframe> how does this work-->
          <hr class="item">
          <div class="group">

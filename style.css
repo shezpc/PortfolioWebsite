@@ -1,5 +1,5 @@
-body, header{
-  font-family:'Courier New', Courier, monospace;
+body{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background: black;
   color:aliceblue;
   font-size: 85%;
@@ -7,14 +7,39 @@ body, header{
 }
 
 header{
+  background-color: black;
+  color: white;
   border:0ch; /*What does this do?*/
   margin: 20px;
   padding:20px;
-  height: 275px;
+  height: 100px;
+}
+
+img{
+  border: 1px inset aliceblue;
+}
+
+header nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+
+}
+
+header nav ul li{
+  margin: 20px;
+}
+
+header a:link{
+  color: white;
+}
+header a:visited{
+  color: white;
 }
 
 a:link {
-  color: greenyellow;
+  color: white;
 }
 
 /* visited link */
@@ -45,8 +70,60 @@ a:active {
 
 }
 
-@media all and (max-width: 600px){
-header, body{ 
-  background-color: rgb(58, 34, 2);;
+.contact ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+form{
+
+  margin:0px;
+  padding:0;
+}
+
+textarea{
+  margin:0;
+  padding:0;
+}
+
+
+@media all and (min-width: 600px){
+body{ 
+  background-color: black;
+}
+
+header{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  margin: 0;
+  padding: 0;
+}
+
+header h1{
+  display: flex;
+  justify-content: flex-start;
+}
+
+header nav{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+header nav ul{
+  display:flex;
+  background: black;
+  border: 1px solid white;
+  margin: 0;
+  padding: 0;
+  
+}
+
+header a:link{
+  color: white;
+}
+header a:visited{
+  color: white;
 }
 }
