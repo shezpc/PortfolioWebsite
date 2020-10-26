@@ -1,14 +1,13 @@
 body{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background: black;
-  color:aliceblue;
+  background: aliceblue;
+  color:black;
   font-size: 85%;
   text-align: center;
 }
 
 header{
-  background-color: black;
-  color: white;
+
   border:0ch; /*What does this do?*/
   margin: 20px;
   padding:20px;
@@ -32,24 +31,24 @@ header nav ul li{
 }
 
 header a:link{
-  color: white;
+  color: black;
 }
 header a:visited{
-  color: white;
+  color: black;
 }
 
 a:link {
-  color: white;
+  color: black;
 }
 
 /* visited link */
 a:visited {
-  color: #00FF00;
+  color: purple;
 }
 
 /* mouse over link */
 a:hover {
-  color: rgb(231, 33, 231);
+  color: green;
 }
 
 /* selected link */
@@ -89,14 +88,10 @@ textarea{
 
 
 @media all and (min-width: 600px){
-body{ 
-  background-color: black;
-}
+
 
 header{
-  background-color: black;
-  color: white;
-  border: 1px solid white;
+  border: 1px solid black;
   margin: 0;
   padding: 0;
 }
@@ -114,17 +109,17 @@ header nav{
 
 header nav ul{
   display:flex;
-  background: black;
-  border: 1px solid white;
+  border: 1px solid black;
   margin: 0;
   padding: 0;
+  margin-top: -25px;
   
 }
 
 header a:link{
-  color: white;
+  color: black;
 }
 header a:visited{
-  color: white;
+  color: black;
 }
 }
