@@ -76,9 +76,10 @@ a:active {
 }
 
 form{
-
-  margin:0px;
-  padding:0;
+  border: 1px groove aliceblue;
+  border-radius: 5px;
+  margin:10px;
+  padding:10px;
 }
 
 textarea{
