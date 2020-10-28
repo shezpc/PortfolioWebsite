@@ -67,9 +67,10 @@
          </section>
          <!-- break between portfolio and services -->
          <hr class="item">
-         <div class="group">
+         <section class="group">
          <h2> Services </h2>
          <div class="item"> TBA </div>
+         </section>
          <hr class="item">
          <!-- break between services and contact -->
          <section class="contact">
@@ -91,17 +92,17 @@
                <div class="item">
                   <label>
                   Your name: 
-                  <input type="text" name="contactname">
+                  <input type="text" name="contactname" required minlength = 1>
                   </label>
                   <br>
                   <label>
                   Your email:
-                  <input type="text" name="_replyto">
+                  <input type="text" name="_replyto" required minlength = 5>
                   </label>
                   <br>
                   <label>
                   Your message:
-                  <textarea name="message" ></textarea>
+                  <textarea name="message" required minlength = 10></textarea>
                   </label>
                </div>
                <!-- your other form fields go here -->
